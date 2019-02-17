@@ -7,6 +7,9 @@ $server = new Server('localhost', 8338);
 
 while(true) {
   $messages = $server->recieve();
-  var_dump($messages);
-  sleep(1);
+  $messages->each(function($message) {
+    $address = $message->address;
+    $values = $message->values->implode(',');
+    echo("$address: $values".PHP_EOL);
+  });
 }
