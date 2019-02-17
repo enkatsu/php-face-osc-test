@@ -1,0 +1,27 @@
+{
+  "name": "enkatsu/face-osc-test",
+  "authors": [{
+    "name": "enkatsu",
+    "email": "endkty0509@gmail.com"
+  }],
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../php-osc-server"
+    },
+    {
+      "type": "path",
+      "url": "../php-osc-parser"
+    }
+  ],
+  "require": {
+    "tightenco/collect": "v5.7.*",
+    "enkatsu/php-osc-parser": "dev-develop",
+    "enkatsu/php-osc-server": "dev-master"
+  },
+  "autoload": {
+    "psr-0": {
+      "": "src/"
+    }
+  }
+}
