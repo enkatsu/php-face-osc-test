@@ -7,7 +7,7 @@
   "repositories": [
     {
       "type": "path",
-      "url": "../php-osc-server"
+      "url": "../php-osc"
     },
     {
       "type": "path",
@@ -17,7 +17,7 @@
   "require": {
     "tightenco/collect": "v5.7.*",
     "enkatsu/php-osc-parser": "dev-master",
-    "enkatsu/php-osc-server": "dev-master"
+    "enkatsu/php-osc": "dev-master"
   },
   "autoload": {
     "psr-0": {

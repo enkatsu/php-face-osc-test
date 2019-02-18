@@ -1,7 +1,7 @@
 <?php
 require_once('vendor/autoload.php');
 
-use Enkatsu\PhpOscServer\Server;
+use Enkatsu\PhpOsc\Server;
 
 $server = new Server('localhost', 8338);
 while(true)
