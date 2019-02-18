@@ -4,8 +4,10 @@ require_once('vendor/autoload.php');
 use Enkatsu\PhpOscServer\Server;
 
 $server = new Server('localhost', 8338);
-while(true) {
+while(true)
+{
   $bundle = $server->recieve();
+  if(is_null($bundle)) continue;
   echo("***\n");
   $bundle->getElements()->each(function($message) use (&$str)
   {
